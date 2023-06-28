@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing On Page</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: antiquewhite;
+        }
+        button{
+            padding: 8px;
+            border-radius: 4px;
+            margin: 20px;
+            background-color: beige;
+            color:black;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif   ;
+        }
+        button:hover{
+            transform:scale(2);
+            transition: 300ms;
+        }
+        p{
+            font-size: 25px;
+        }
+    </style>
+    <script>
+        document.write("hii, there", 10+3)
+    </script>
+</head>
+<body>
+    <h1>If you want to write something on page, Click button below</h1>
+    <br>
+    <p id="lines"></p>
+    <img id="img-1" src="" alt="">
+    <br>
+    <button onclick="writing()">
+        Click Me
+    </button>
+    <script>
+        function writing(){
+            if( document.querySelector('#lines').innerHTML == "this is Wrote using write() function. now, watch this image."){
+                document.querySelector('#lines').innerHTML = null;
+                document.querySelector("#img-1").src = null;
+            }
+            else{
+                document.querySelector('#lines').innerHTML = "this is Wrote using write() function. now, watch this image.";
+                document.querySelector("#img-1").src = "https://t4.ftcdn.net/jpg/05/62/78/85/360_F_562788544_gBBydDZ7jt9eYjTmsXhsXVzPjL2yQfsg.jpg";
+            }
+            // document.write(10-5," kuch bhi...");
+        }
+    </script>
+</body>
+</html>

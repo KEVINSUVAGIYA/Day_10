@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Image</title>
+    <style>
+        button{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+    <div style="min-width: 700px;">
+        <img style="width: 500px;" id="img-1" src="https://media.tenor.com/6C4aWv4xsTYAAAAi/dancing.gif" alt="">
+        <hr>
+        <button onclick="document.getElementById('img-1').src = 'https://media.tenor.com/WJtUix3cQyMAAAAj/kaito-vocaloid.gif'">
+            <h1>Dancing Boy</h1>
+        </button>
+        <button onclick="document.getElementById('img-1').src = 'https://media.tenor.com/RBa6x9ziqSMAAAAC/lets-party.gif' ">
+            <h1>Danncing Girl</h1>
+        </button>
+        <br>
+        <button onclick=" ( () => {
+            document.getElementById('img-1').src = 'https://media.tenor.com/6C4aWv4xsTYAAAAi/dancing.gif';
+            document.getElementById('img-1').style.display='inline-block'
+        }) ()">
+            <h1>Reset</h1>
+        </button>
+        <br>
+        <button onclick="document.getElementById('img-1').style.display='none' ">
+            <h1>Hide</h1>
+        </button>
+        <button onclick="document.getElementById('img-1').style.display='inline-block' ">
+            <h1>Show</h1>
+        </button>
+    </div>
+</body>
+</html>
